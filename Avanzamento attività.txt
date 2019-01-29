@@ -1,0 +1,6 @@
+29/01/2019   16:00
+Creazione codice per utilizzo della termocoppia con il componente "MAX6675" e lettura tramite monitor seriale
+
+29/01/2019   17:20
+
+Aggiunta di codice Arduino per implementazione di LED per segnalare l'assunzione di determinate temperature
