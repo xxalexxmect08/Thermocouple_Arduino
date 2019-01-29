@@ -3,8 +3,9 @@
 
 #include "max6675.h"
 unsigned long old_millis = 0;
-unsigned long delta = 30000;
+unsigned long delta = 60000;
 int minuti = 1;
+int ledPin = 8;
 int thermoDO = 6;
 int thermoCS = 5;
 int thermoCLK = 4;
@@ -18,6 +19,7 @@ void setup() {
   // use Arduino pins
   pinMode(vccPin, OUTPUT); digitalWrite(vccPin, HIGH);
   pinMode(gndPin, OUTPUT); digitalWrite(gndPin, LOW);
+  pinMode(ledPin, OUTPUT);
 
   Serial.println("MAX6675 test");
   // wait for MAX chip to stabilize
@@ -34,6 +36,9 @@ void loop() {
     Serial.println(thermocouple.readCelsius());
     old_millis = now;
     minuti = minuti + 1;
+    digitalWrite(ledPin, HIGH);
+    delay(500);
+    digitalWrite(ledPin, LOW);
   }
   delay(1);
 }
