@@ -4,3 +4,7 @@ Creazione codice per utilizzo della termocoppia con il componente "MAX6675" e le
 29/01/2019   17:20
 
 Aggiunta di codice Arduino per implementazione di LED per segnalare l'assunzione di determinate temperature
+
+31/01/2019   12:10
+
+Implementazione progetto KiCad e Codice Arduino per utilizzo di componente DHT11 per misura di temperatura e umidità relativa
