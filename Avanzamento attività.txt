@@ -8,3 +8,7 @@ Aggiunta di codice Arduino per implementazione di LED per segnalare l'assunzione
 31/01/2019   12:10
 
 Implementazione progetto KiCad e Codice Arduino per utilizzo di componente DHT11 per misura di temperatura e umidità relativa
+
+04/02/2019  14:30
+
+Modifica codice per acquisizione dati divisi da virgola per tabulazione e elaborazione su Microsoft Excel e prova di elaborazione dati
