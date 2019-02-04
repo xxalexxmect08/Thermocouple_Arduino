@@ -12,3 +12,7 @@ Implementazione progetto KiCad e Codice Arduino per utilizzo di componente DHT11
 04/02/2019  14:30
 
 Modifica codice per acquisizione dati divisi da virgola per tabulazione e elaborazione su Microsoft Excel e prova di elaborazione dati
+
+04/02/2019  16:30
+
+aggiunta di pulsante sul circuito per cattura di valore senza timer con relativo codice
