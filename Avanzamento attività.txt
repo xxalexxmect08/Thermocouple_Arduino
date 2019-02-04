@@ -15,4 +15,4 @@ Modifica codice per acquisizione dati divisi da virgola per tabulazione e elabor
 
 04/02/2019  16:30
 
-aggiunta di pulsante sul circuito per cattura di valore senza timer con relativo codice
+aggiunta di pulsante sul circuito per cattura di valore senza timer con relativo codice per funzionamento
