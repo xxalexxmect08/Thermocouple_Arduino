@@ -8,7 +8,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 #include "max6675.h"
 unsigned long old_millis = 0;
-unsigned long delta = 5000;
+unsigned long delta = 1000;
 int minuti = 1;
 int ledPin = 8;
 int ledMax = 12;
@@ -29,7 +29,7 @@ void setup() {
 
   dht.begin();
 
-  Serial.println("Time,Termocoppia °C,umidità,DHT11 °C,temp percepita °C");
+  Serial.println("Time,°C Termocoppia,°C DHT11,°C temp percepita");
 
   // wait for MAX chip to stabilize
   delay(500);
@@ -56,15 +56,10 @@ void loop() {
   float hif = dht.computeHeatIndex(f, h);
   float hic = dht.computeHeatIndex(T_DHT11, h, false);
 
-  if (isnan(h) || isnan(T_DHT11) || isnan(f)) {
-    Serial.println(F("DHT11: Failed to read from DHT sensor!"));
-    return;
-  }
-
   //Serial.print("DHT11: ");
   //Serial.print(F("Humidity: "));
-  Serial.print(h);
-  Serial.print(",");
+  //Serial.print(h);
+  //Serial.print(",");
   //Serial.print(F(" %  Temperature: "));
   Serial.print(T_DHT11);
   Serial.print(",");
